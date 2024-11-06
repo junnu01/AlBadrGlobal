@@ -80,7 +80,7 @@ nav ul li a {
 }
 
 .hero-section {
-    background: url('/assets/bg-1.jpg') no-repeat center center/cover;
+    background: url('assets/bg-1.jpg') no-repeat center center/cover;
     height: 400px;
     display: flex;
     aspect-ratio: 4/5;
