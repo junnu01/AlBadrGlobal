@@ -1,0 +1,376 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: all;
+    background: linear-gradient(135deg, #f0f4f8, #e6f7ff); 
+}
+
+
+.navbar {
+    background-color: transparent; 
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #d39a0a;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.navbar a:hover {
+    color: #ffd700; 
+    transform: scale(1.1); 
+}
+
+
+.navbar a:focus {
+    outline: none;
+}
+
+
+header {
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #222;
+    color: white;
+}
+
+header .logo img {
+    height: 70px;
+    aspect-ratio: 3/2;
+
+
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero-section {
+    background: url('/assets/bg-1.jpg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    aspect-ratio: 4/5;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    color: rgb(230, 147, 4);
+    text-shadow: 2px 2px 8px #000;
+}
+
+.hero-section h1 {
+    font-size: 48px;
+}
+
+.packages-info {
+    padding: 30px;
+    text-align: center;
+
+}
+
+.packages {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 15px;
+    width: 250px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+.inquiry-form-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    background-color: #2586db; /* Light blue background color */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.inquiry-form-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(43, 0, 236, 0.2);
+}
+
+.inquiry-form-container h3 {
+    text-align: center;
+    font-size: 20px;
+    color: #ed8701;
+    margin-bottom: 1.5rem;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+   
+    flex-direction: column;
+    gap: 1rem;
+}
+
+label {
+    font-weight: bold;
+    color: #555;
+}
+
+input, select, textarea {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: border 0.3s ease;
+    font-family: 'Arial', sans-serif;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #cd8315;
+    outline: none;
+}
+
+button {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+textarea {
+    resize: vertical;
+}
+
+
+
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+.packages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    width: 300px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+button.book-now-btn {
+    background-color: goldenrod;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.book-now-btn:hover {
+    background-color: #b8860b;
+}
+
+
+@keyframes popUp {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.packages {
+    display: flex;
+    flex-direction: row; /* Aligns cards in a vertical column */
+    align-items: center; /* Centers the cards horizontally */
+    gap: 20px; /* Adds space between the cards */
+    padding: 10px;
+}
+
+.card {
+    width: 100%; /* Sets card width to 100% of the parent container */
+    max-width: 300px; /* Limits the maximum width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+
+
+h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column; /* Stack fields vertically */
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px;
+    background-color: #28a745; /* Green button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 500px) {
+    .inquiry-form-container {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+}
+.inquiry-form-container {
+    max-width: 400px; 
+    margin: 20px auto; 
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column; /* Stack fields vertically */
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px;
+    background-color: #28a745; /* Green button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+.footer-container{
+background-color: #000;
+}
+
+

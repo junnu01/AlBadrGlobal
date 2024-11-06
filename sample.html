@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    form{
+        margin: 15px 5px;
+        width: 500px;
+        font-size: 16px;
+    }
+    form h1{
+        text-align: center;
+    }
+    form label{
+        display: block;margin-bottom: 5px;
+    }
+    form input, form textarea{
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        resize: vertical;
+        }
+        form button{
+            background: #ACAF50;
+            color: aliceblue;
+            padding: 10px 15px;
+            margin-top: 5px;
+            border: none;
+            cursor: pointer;
+        }
+</style>
+<script>
+    function sendwhatsapp(){
+var phonenumber = "918767349491";
+var name = document.querySelector('.name').value;
+var phone  = document.querySelector('.Phone').value;
+var email = document.querySelector('.email').value;
+var country = document.querySelector('.Country').value; // Fixed case issue
+var message = document.querySelector('.Messages').value; // Fixed case issue
+
+var url = "https://wa.me/" + phonenumber + "?text="
+    + "*Name :* " + name + "%0a"
+    + "*Phone No :*"+phone+"%0a"
+    + "*Email :* " + email + "%0a"
+    + "*Country:* " + country + "%0a"
+    + "*Message :* " + message
+    + "%0a%0a"
+    + "Inquiry about the tour !!";
+
+window.open(url, '_blank').focus();
+}  
+</script>
+<body>
+    <form >
+        <h1>Send Inquiry</h1>
+        <label>Name</label>
+        <input type="text" class="name">
+        <label for="">Phone No</label>
+        <input type="number" class="Phone">
+        <label for="">Email</label>
+        <input type="email" class="email">
+        <label for="">Country</label>
+        <input type="text" class="Country">
+        <label for="">Messages</label>
+       <textarea class="Messages"></textarea>
+       <button type="button" onclick="sendwhatsapp()">Send Via Whatsapp</button>
+
+    </form>
+ 
+</body>
+</html>
